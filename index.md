@@ -85,6 +85,7 @@ The following tables gives an overview of Jdrasil releases:
 
 Release | Manual
 ------- | ------
+[Jdrasil-v0.3](http://maxbannach.github.io/Jdrasil/snapshots/Jdrasil-v0.3.jar) | [Manual-v0.3](http://maxbannach.github.io/Jdrasil/manual/manual-v0.3.pdf)
 [Jdrasil-v0.2](http://maxbannach.github.io/Jdrasil/snapshots/Jdrasil-v0.2.jar) | [Manual-v0.2](http://maxbannach.github.io/Jdrasil/manual/manual-v0.2.pdf)
 [Jdrasil-pace2017](http://maxbannach.github.io/Jdrasil/snapshots/Jdrasil-pace2017.jar) | [Manual-pace2017](http://maxbannach.github.io/Jdrasil/manual/manual-pace2017.pdf)
 [Jdrasil-v0.1](http://maxbannach.github.io/Jdrasil/snapshots/Jdrasil-v0.1.jar) | [Manual-v0.1](http://maxbannach.github.io/Jdrasil/manual/manual-v0.1.pdf)
