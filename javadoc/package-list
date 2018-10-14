@@ -1,0 +1,17 @@
+jdrasil
+jdrasil.algorithms
+jdrasil.algorithms.approximation
+jdrasil.algorithms.exact
+jdrasil.algorithms.lowerbounds
+jdrasil.algorithms.postprocessing
+jdrasil.algorithms.preprocessing
+jdrasil.algorithms.upperbounds
+jdrasil.datastructures
+jdrasil.graph
+jdrasil.graph.invariants
+jdrasil.utilities
+jdrasil.utilities.logging
+jdrasil.utilities.sat
+jdrasil.utilities.sat.encodings
+jdrasil.utilities.sat.formulations
+jdrasil.workontd
