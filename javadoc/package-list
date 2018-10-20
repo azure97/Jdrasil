@@ -9,9 +9,9 @@ jdrasil.algorithms.upperbounds
 jdrasil.datastructures
 jdrasil.graph
 jdrasil.graph.invariants
+jdrasil.sat
+jdrasil.sat.encodings
+jdrasil.sat.formulations
 jdrasil.utilities
 jdrasil.utilities.logging
-jdrasil.utilities.sat
-jdrasil.utilities.sat.encodings
-jdrasil.utilities.sat.formulations
 jdrasil.workontd
