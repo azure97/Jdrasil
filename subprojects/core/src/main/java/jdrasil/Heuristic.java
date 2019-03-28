@@ -18,6 +18,7 @@
 
 package jdrasil;
 
+import jdrasil.algorithms.postprocessing.NiceTreeDecomposition;
 import jdrasil.algorithms.preprocessing.GraphReducer;
 import jdrasil.algorithms.upperbounds.LocalSearchDecomposer;
 import jdrasil.algorithms.upperbounds.PaceGreedyDegreeDecomposer;
@@ -114,7 +115,7 @@ public class Heuristic implements sun.misc.SignalHandler {
                 if(td != null && td.getWidth() < upperBound){
                     this.decomposition = td;
                     upperBound = td.getWidth();
-                    if(i > 3 && upperBound < 1000)
+                    if(i > 3 && upperBound < 20)
                         break;
                 }
             }
@@ -194,8 +195,13 @@ public class Heuristic implements sun.misc.SignalHandler {
             this.decomposition = reducer.getTreeDecomposition();
         }
         this.decomposition.connectComponents();
+        NiceTreeDecomposition ntd = new NiceTreeDecomposition<>(this.decomposition, false);
+        this.decomposition = ntd.getProcessedTreeDecomposition();
+        
         tend = System.nanoTime();
         System.out.println(this.decomposition);
+        System.out.println("r " + ntd.getRoot());
+        
         LOG.info("");
         LOG.info("Tree-Width: " + decomposition.getWidth());
         LOG.info("Used " + (tend-tstart)/1000000000 + " seconds");
