@@ -195,12 +195,14 @@ public class Heuristic implements sun.misc.SignalHandler {
             this.decomposition = reducer.getTreeDecomposition();
         }
         this.decomposition.connectComponents();
-        NiceTreeDecomposition ntd = new NiceTreeDecomposition<>(this.decomposition, false);
-        this.decomposition = ntd.getProcessedTreeDecomposition();
-        
+        if (JdrasilProperties.containsKey("n")) {
+            NiceTreeDecomposition ntd = new NiceTreeDecomposition<>(this.decomposition, false);
+            this.decomposition = ntd.getProcessedTreeDecomposition();
+            System.out.println("r " + ntd.getRoot());
+        }
+
         tend = System.nanoTime();
         System.out.println(this.decomposition);
-        System.out.println("r " + ntd.getRoot());
         
         LOG.info("");
         LOG.info("Tree-Width: " + decomposition.getWidth());
